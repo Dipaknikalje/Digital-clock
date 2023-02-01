@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital clock</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <div class="frame">
+      <div class="clock"></div>
+      <div class="pop">
+        <div class="wake">
+          <div class="woke"></div>
+          <select name="wakeUp" id="wakeUp" class="waketiming" name="time" width="281px" height="45px">
+            <option value="default">default</option>
+              <option value="00">00 AM - 01 AM</option>
+              <option value="01">01 AM - 02 AM</option>
+              <option value="02">02 AM - 03 AM</option>
+              <option value="03">03 AM - 04 AM</option>
+              <option value="04">04 AM - 05 AM</option>
+              <option value="05">05 AM - 06 AM</option>
+              <option value="06">06 AM - 07 AM</option>
+              <option value="07">07 AM - 08 AM</option>
+              <option value="08">08 AM - 09 AM</option>
+              <option value="09">09 AM - 10 AM</option>
+              <option value="10">10 AM - 11 AM</option>
+              <option value="11">11 AM - 12 PM</option>
+              <option value="12">12 PM - 01 PM</option>
+              <option value="13">01 PM - 02 PM</option>
+              <option value="14">02 PM - 03 PM</option>
+              <option value="15">03 PM - 04 PM</option>
+              <option value="16">04 PM - 05 PM</option>
+              <option value="17">05 PM - 06 PM</option>
+              <option value="18">06 PM - 07 PM</option>
+              <option value="19">07 PM - 08 PM</option>
+              <option value="20">08 PM - 09 PM</option>
+              <option value="21">09 PM - 10 PM</option>
+              <option value="22">10 PM - 11 PM</option>
+              <option value="23">11 PM - 00 AM</option>
+          </select>
+          <span class="line"> | </span>
+          <label> Set wake up time</label>
+        </div>
+
+        <div class="lunch">
+          <div name="lnch" id="lnch" class="lounch"></div>
+          <select id="lnchtime" class="lunchtiming" name="time">
+            
+            <option value="default">default</option>
+              <option value="00">00 AM - 01 AM</option>
+              <option value="01">01 AM - 02 AM</option>
+              <option value="02">02 AM - 03 AM</option>
+              <option value="03">03 AM - 04 AM</option>
+              <option value="04">04 AM - 05 AM</option>
+              <option value="05">05 AM - 06 AM</option>
+              <option value="06">06 AM - 07 AM</option>
+              <option value="07">07 AM - 08 AM</option>
+              <option value="08">08 AM - 09 AM</option>
+              <option value="09">09 AM - 10 AM</option>
+              <option value="10">10 AM - 11 AM</option>
+              <option value="11">11 AM - 12 PM</option>
+              <option value="12">12 PM - 01 PM</option>
+              <option value="13">01 PM - 02 PM</option>
+              <option value="14">02 PM - 03 PM</option>
+              <option value="15">03 PM - 04 PM</option>
+              <option value="16">04 PM - 05 PM</option>
+              <option value="17">05 PM - 06 PM</option>
+              <option value="18">06 PM - 07 PM</option>
+              <option value="19">07 PM - 08 PM</option>
+              <option value="20">08 PM - 09 PM</option>
+              <option value="21">09 PM - 10 PM</option>
+              <option value="22">10 PM - 11 PM</option>
+              <option value="23">11 PM - 00 AM</option>
+          </select>
+          <span class="line"> | </span>
+          <label>Set lunch time</label>
+        </div>
+
+        <div class="nap">
+          <div class="nop"></div>
+          <select name="n" id="n" class="naptiming" name="time">
+            <option value="default">default</option>
+              <option value="00">00 AM - 01 AM</option>
+              <option value="01">01 AM - 02 AM</option>
+              <option value="02">02 AM - 03 AM</option>
+              <option value="03">03 AM - 04 AM</option>
+              <option value="04">04 AM - 05 AM</option>
+              <option value="05">05 AM - 06 AM</option>
+              <option value="06">06 AM - 07 AM</option>
+              <option value="07">07 AM - 08 AM</option>
+              <option value="08">08 AM - 09 AM</option>
+              <option value="09">09 AM - 10 AM</option>
+              <option value="10">10 AM - 11 AM</option>
+              <option value="11">11 AM - 12 PM</option>
+              <option value="12">12 PM - 01 PM</option>
+              <option value="13">01 PM - 02 PM</option>
+              <option value="14">02 PM - 03 PM</option>
+              <option value="15">03 PM - 04 PM</option>
+              <option value="16">04 PM - 05 PM</option>
+              <option value="17">05 PM - 06 PM</option>
+              <option value="18">06 PM - 07 PM</option>
+              <option value="19">07 PM - 08 PM</option>
+              <option value="20">08 PM - 09 PM</option>
+              <option value="21">09 PM - 10 PM</option>
+              <option value="22">10 PM - 11 PM</option>
+              <option value="23">11 PM - 00 AM</option>
+            
+          </select>
+          <span class="line"> | </span>
+          <label>Set nap time</label>
+        </div>
+        <div class="night">
+          <div class="nigh"></div>
+          <select name="sleep" id="sleep" class="nighttiming" name="time">
+            <option value="default">default</option>
+            <option value="00">00 AM - 01 AM</option>
+            <option value="01">01 AM - 02 AM</option>
+            <option value="02">02 AM - 03 AM</option>
+            <option value="03">03 AM - 04 AM</option>
+            <option value="04">04 AM - 05 AM</option>
+            <option value="05">05 AM - 06 AM</option>
+            <option value="06">06 AM - 07 AM</option>
+            <option value="07">07 AM - 08 AM</option>
+            <option value="08">08 AM - 09 AM</option>
+            <option value="09">09 AM - 10 AM</option>
+            <option value="10">10 AM - 11 AM</option>
+            <option value="11">11 AM - 12 PM</option>
+            <option value="12">12 PM - 01 PM</option>
+            <option value="13">01 PM - 02 PM</option>
+            <option value="14">02 PM - 03 PM</option>
+            <option value="15">03 PM - 04 PM</option>
+            <option value="16">04 PM - 05 PM</option>
+            <option value="17">05 PM - 06 PM</option>
+            <option value="18">06 PM - 07 PM</option>
+            <option value="19">07 PM - 08 PM</option>
+            <option value="20">08 PM - 09 PM</option>
+            <option value="21">09 PM - 10 PM</option>
+            <option value="22">10 PM - 11 PM</option>
+            <option value="23">11 PM - 00 AM</option>
+          </select>
+          
+          <label>Set night time</label>
+        </div>
+      </div>
+      <div id="greeting" class="good"></div>
+      <button name="set" id="button"  class="alarm">Set Alarm</button>
+      <div class="shedule">
+        <p>Wake Up Time :<span class="timing"></span></p>
+            <p>Lunch Time :<span class="timing"></span></p>
+            <p>Nap Time :<span class="timing"></span></p>
+            <p>Night Time :<span class="timing"></span></p>
+    </div>
+ </div> 
+</div>
+<div class="timer"><span class="time">TIME</span>
+    <span class="hr" id="hours">10</span><p class="h">hours</p>
+    <span class="min" id="minutes">00 </span><p class="m">min</p>
+    <span class="sec" id="seconds">00 </span><p class="s">sec</p>
+    <div class="a">
+    <span class="am" id="session"><p class="am"></p></span></div>
+</div>
+<div class="bg2"></div>
+<div class="bg3"></div>
+<div id="settime" class="breakfast"></div>
+<div id="images" class="image"></div>
+<div class="note">Note: Go to Artboard 3(Assets) to see all the assets used in this project</div>
+<a href src="./index.html"><div class="home"></div></a>
+    </div>
+   <script src="./script.js"></script>
+  </body>
+</html>
