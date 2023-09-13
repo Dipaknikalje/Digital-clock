@@ -1,0 +1,540 @@
+
+body {
+  background-color: #3d087b;
+}
+
+@font-face {
+  font-family: Bauhaus;
+  src: url(./Images/BauhausHeavyBT.ttf);
+}
+
+.parent{
+
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+
+}
+
+.container{
+  width: 80%;
+  position: relative;
+  height: 90vh;
+}
+
+.clock_cntr{
+  height: 15%;
+}
+
+.clockImage {
+  height: 100%;
+  background-size: cover;
+
+}
+
+.runningClock{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 28%;
+  width: 46%;
+}
+
+.runningClock_Cntnr{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.CommonRc {
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.box1 {
+height: 100%;
+opacity: 0.23;
+width: 80%;
+bottom: 0;
+left: 10%;
+/* transform: translate(-6%, 0%); */
+/* top: -21%; */
+
+}
+
+
+
+
+
+.box2 {
+
+height: 90%;
+width: 90%;
+opacity: 0.71;
+bottom: 15px;
+left: 5%;
+/* display: none; */
+/* bottom: 0; */
+}
+
+.box3 {
+height: 80%;
+opacity: 1;
+width: 100%;
+}
+
+
+.formSelectorBox {
+  width: 50%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 40%;
+  padding: 15px 0px;
+  box-sizing: border-box;
+  margin-top: 2%;
+  /* height: 45%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.list1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* margin: 9px; */
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  color: #3d087b;
+  padding:  0;
+}
+
+.sel1 {
+ 
+  color: #3d087b;
+  border: 1px solid #ededed;
+  padding: 10px;
+  width: 40%;
+}
+
+select {
+  appearance: none;
+}
+
+.icon1 {
+  background-image: url(./Images/down-arrow.png);
+  background-repeat: no-repeat;
+
+  background-size: 10px;
+
+  background-position-y: center;
+  background-position-x: 90%;
+}
+
+.hor1 {
+  transform: rotate(180deg);
+
+}
+
+.msg_ChangeWith_SetAlarm {
+  position: absolute;
+  top: 60%;
+  height: 12%;
+  box-sizing: border-box;
+  /* background-color: #5f0089; */
+  background-color: #9140B5;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: Bauhaus;
+  border-radius: 10px;
+  padding: 10px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.flex1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.setAlarmBoxContainer{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  /* bottom: 0; */
+  height: 20%;
+  width: 50%;
+  gap: 15px;
+  top: 78%;
+}
+
+.setAlarm {
+width: 50%;
+  height: 50px;
+  border-radius: 4px;
+  font-size: 24px;
+  background-image: linear-gradient(
+    113deg,
+    #674cee 0%,
+    #c446f2 40%,
+    #f363f5 81%,
+    #f28ab4 100%
+  );
+  transition: background-image ease-out 2s, content;
+  left: 12%;               
+}
+
+.setAlarm:hover {
+  background-image: linear-gradient(
+    293deg,
+    #674cee 0%,
+    #c446f2 40%,
+    #f363f5 81%,
+    #f28ab4 100%
+  );
+}
+
+.resultOfSetAlarm{
+  width: 50%;
+  background-color: #8d36b2;
+  border-radius: 10px;
+  /* color: #B85EBF; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.setAlarm:hover span {
+  display: none;
+}
+
+.setAlarm:hover:before {
+  content: "Party time";
+}
+
+
+
+.time {
+  /* margin-top: 10px; */
+  margin-left: 15px;
+}
+
+
+
+
+.msg_ChangeWith_realTime {
+  background-color: #fff;
+  color: #8b4cf1;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  height: 16%;
+  width: 46%;
+  /* height: 2rem; */
+  /* border: 1px solid; */
+  padding: 1rem;
+  box-sizing: border-box;
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: Bauhaus;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ImageChangeWithTime {
+  border-radius: 10px;
+  /* position: absolute; */
+  /* right: 0; */
+  position: absolute;
+  right: 0;
+  top: 48%;
+  width: 46%;
+  height: 50%;
+}
+
+.relative {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.sub1 {
+  color: #440e83;
+  font-size: 20px;
+  font-weight: 600;
+  right: 25px;
+}
+
+.sub2 {
+  background-image: url(./Images/timeline.jpg);
+  width: 80px;
+  height: 90px;
+}
+
+.sub3 {
+  color: #8a11bf;
+  font-size: 45px;
+  margin: 4px;
+}
+
+.sub4 {
+  background-image: url(./Images/timeline.jpg);
+  width: 82px;
+  height: 90px;
+}
+
+.sub7 {
+  background-image: url(./Images/AM_svg.jpg);
+  width: 82px;
+  height: 90px;
+  font-size: 36px;
+  color: #ffffff;
+
+  left: 15px;
+}
+
+.fon1 {
+  font-size: 36px;
+  color: #8a11bf;
+}
+
+.fon2 {
+  font-size: 23px;
+  color: #5f0089;
+}
+
+.relative1 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#theImage {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+@media (min-width:300px) and (max-width:595px) {
+.parent{
+  padding: 1rem;
+}
+.container{
+  width: 100%;
+  position: static;
+  height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .runningClock{
+    position: static;
+    /* margin: 10px; */
+    width: 100%;
+    /* height: 160px; */
+    height: 140px;
+  }
+  .box1{
+      display: none;
+  }
+  .box2{
+      display: none;
+  }
+  .box3{
+      width: 100%;
+  }
+  .sub1{
+      display: none;
+  }
+  .runningClock_Cntnr{
+      position: static;
+  }
+  .formSelectorBox{
+      position: static;
+      margin-bottom: 20px;
+      width: 100%;
+      height: auto;
+      margin-top: -15px;
+  }
+  .la{
+      display: none;
+  }
+  hr{
+      display: none;
+  }
+
+  .setAlarm{
+     
+      width: 100%;
+  }
+  .resultOfSetAlarm{
+    width: 100%;
+    margin-bottom: 16px;
+    color: black;
+  }
+  .msg_ChangeWith_SetAlarm{
+      position: static;
+      margin-bottom: 20px;
+      width: 100%;
+  font-size: 25px;
+  }
+  .msg_ChangeWith_realTime{
+    position: static;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 26px;
+    padding: 15px 0px;
+    text-align: center;
+  }
+  .ImageChangeWithTime{
+      position: static;
+      margin-bottom: 20px;
+      width: auto;
+      height: auto;
+  }
+  #theImage{
+      width: 100%;
+
+    }
+.CommonRc{
+position: static;
+}
+
+.setAlarmBoxContainer {
+position: static;
+width: 100%;
+flex-direction: column;
+}
+
+
+.sel1{
+  width: 60%;
+}
+
+.list1 {
+  padding: 6px;
+  }
+  .time {
+  padding: 4px;
+}
+
+  } 
+
+  @media (min-width:595px) and (max-width:900px) {
+    .parent{
+      padding: 1rem;
+    }
+    .container{
+      width: 60%;
+      position: static;
+      height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sel1{
+      width: 60%;
+    }
+    
+    .list1 {
+      padding: 6px;
+      }
+      .time {
+      padding: 4px;
+    }
+      .runningClock{
+        position: static;
+        /* margin: 10px; */
+        width: 100%;
+        /* height: 160px; */
+        height: 140px;
+      }
+      .box1{
+          display: none;
+      }
+      .box2{
+          display: none;
+      }
+      .box3{
+          width: 100%;
+      }
+      .sub1{
+          display: none;
+      }
+      .runningClock_Cntnr{
+          position: static;
+      }
+      .formSelectorBox{
+          position: static;
+          margin-bottom: 20px;
+          width: 100%;
+          height: auto;
+          margin-top: -15px;
+      }
+      .la{
+          display: none;
+      }
+      hr{
+          display: none;
+      }
+    
+      .setAlarm{
+         
+          width: 100%;
+      }
+      .setAlarmBoxContainer {
+        position: static;
+        width: 100%;
+        flex-direction: column;
+        }
+      .resultOfSetAlarm{
+        width: 100%;
+        margin-bottom: 16px;
+        color: black;
+      }
+      .msg_ChangeWith_SetAlarm{
+          position: static;
+          margin-bottom: 20px;
+          width: 100%;
+      font-size: 25px;
+      }
+      .msg_ChangeWith_realTime{
+        position: static;
+        margin-bottom: 30px;
+        margin-top: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 26px;
+        padding: 15px 0px;
+        text-align: center;
+      }
+      .ImageChangeWithTime{
+          position: static;
+          margin-bottom: 20px;
+          width: auto;
+          height: auto;
+      }
+      #theImage{
+          width: 100%;
+    
+        }
+    .CommonRc{
+    position: static;
+    }
+    
+      } 
